@@ -5,8 +5,8 @@
 using namespace std;
 
 int main() {
-	// freopen("cowsignal.in", "r", stdin);
-	// freopen("cowsignal.out", "w", stdout);
+	freopen("cowsignal.in", "r", stdin);
+	freopen("cowsignal.out", "w", stdout);
 	int m, n, k;
 	cin >> m >> n >> k;
 
