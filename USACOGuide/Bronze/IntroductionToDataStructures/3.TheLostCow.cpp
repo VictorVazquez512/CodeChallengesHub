@@ -5,9 +5,9 @@
 using namespace std;
 
 int main() {
-	// freopen("speeding.in", "r", stdin);
-	// freopen("speeding.out", "w", stdout);
-	int x, y, old_pos, original_pos, total_distance, next_walk = 1;
+	freopen("lostcow.in", "r", stdin);
+	freopen("lostcow.out", "w", stdout);
+	long long x, y, old_pos, original_pos, total_distance = 0, next_walk = 1;
 	cin >> x >> y;
 
 	original_pos = x;
@@ -17,7 +17,7 @@ int main() {
 		x += next_walk;
 		next_walk *= -2;
 
-		if ((original_pos > y && x < y) || (original_pos < y && x > y)) {
+		if ((original_pos >= y && x <= y) || (original_pos <= y && x >= y)) {
 			total_distance += abs(old_pos - y);
 			break;
 		} else {
