@@ -5,8 +5,8 @@
 using namespace std;
 
 int main() {
-	freopen("cowsignal.in", "r", stdin);
-	freopen("cowsignal.out", "w", stdout);
+	freopen("speeding.in", "r", stdin);
+	freopen("speeding.out", "w", stdout);
 	int n, m, segment_length, segment_speed, max_diff = 0, current_diff;
 	int road_unit = 1;
 	int speed_limits[100];
